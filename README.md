@@ -11,7 +11,7 @@ time. It contains:
 ## CV as a github page
 
 Making your CV as a github page has several advantages. It is easy to
-update, it is always available, and list of publications can be
+update, it is always available, and lists of publications can be
 automated. The idea is to create the CV as a quarto document, that will
 be rendered both in pdf and html. The pdf version having a button to
 download it from the html one. Setting up a github action, we can
@@ -22,9 +22,9 @@ is pushed to the main branch.
 
 The idea of making a webpage CV that would also be rendered in pdf was
 first described in [this article from Cynthia
-Huang](https://www.cynthiahqy.com/posts/cv-html-pdf/). The handling of
-lists of publications and mobile view has been added to the original
-tutorial.
+Huang](https://www.cynthiahqy.com/posts/cv-html-pdf/) (Huang, 2023). The
+handling of lists of publications and mobile view has been added to the
+original tutorial.
 
 ### Short biography
 
@@ -37,17 +37,17 @@ file.
 For some reasons, when rendering a quarto file into an html, the table
 of content and contact informations does not appear on the mobile
 version. This is a massive issue, because in conferences most people
-will access your page throuhg a smartphone. The “hide-on-desktop” block
+will access your page using a smartphone. The “hide-on-desktop” block
 allows you to add information that will not appear on a screen larger
 than 481px. This can be changed in the css file.
 
 ### Lists of publications
 
 You can have several lists of publications: peer reviewed articles,
-popular science, books, and what not. Each list of publication needs to
-be in a separated bib file. The trick is to use the `multibib` filter,
-`nocite` to list publication that are not cited, and
-`validate-yaml: false` to silence an unwanted error. You will need to
+popular science, books, R packages, and what not. The trick is to use
+the `multibib` filter, `nocite` to list publication that are not cited,
+and `validate-yaml: false` to silence an unwanted error. Each list of
+publication needs to be in a separated bib file. You will need to
 install the multibib filter from its [github
 repo](https://github.com/pandoc-ext/multibib#readme). The style of the
 publication lists depend on the csl (citation style language) file.
@@ -73,7 +73,7 @@ your CV on another branch, and when it looks nice you open a pull
 request and it updates the webpage. Side note: you can have the github
 repo as private and the page as public, showing only your nicest side.
 
-The full documentation to setup a github actiona can be found in the
+The full documentation to setup a github action can be found in the
 [github
 documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow)
 
@@ -84,7 +84,15 @@ In short:
 - choose “static HTML”
 - commit the changes to the main branch
 
-## Making a QR code R
+## Making a QR code in R
+
+QR codes are great. You can print them as stickers and have them at the
+back of your phone for example. And when someone asks how to stay in
+touch, or about your work, just hand it to them to scan.
+
+BUT… most “free” QR code generators are collecting data about the people
+scanning your QR code. Not cool. The `qrcode` package (Onkelinx and Teh,
+2024) in R does not do that.
 
 ``` r
 library(qrcode)
@@ -106,3 +114,23 @@ middle of a session.
 |             Exchanged contacts              |                    Asked a question (poster)                     |      Went to a skills devellopment course or workshop      | Made action points for yourself about things to follow up after the conference |
 |           Got a new research idea           |                Listened to a talk out of my field                |                Asked a question (any setup)                |                         Introduced myself and my topic                         |
 | Went to a society or interest group meeting | Picked up a cool / useful new skill of relevance for my research |          Had a coffee or drink with a new person           |                 Shared an outstanding finding with colleagues                  |
+
+<div id="refs" class="references csl-bib-body hanging-indent"
+entry-spacing="0" line-spacing="2">
+
+<div id="ref-huang2023" class="csl-entry">
+
+Huang, C. (2023), “Publishing HTML and PDF versions of a Quarto CV
+without LaTex”, <https://www.cynthiahqy.com/posts/cv-html-pdf/>, August.
+
+</div>
+
+<div id="ref-onkelinxQrcodeGenerateQrcodes2024" class="csl-entry">
+
+Onkelinx, T. and Teh, V. (2024), *Qrcode: Generate Qrcodes with R.
+Version 0.3.0*, Manual, available
+at:<https://doi.org/10.5281/zenodo.5040088>.
+
+</div>
+
+</div>
