@@ -1,0 +1,72 @@
+---
+title: Ella Maillart
+# format-links: false
+format:
+  html:
+    toc: true
+    other-links:
+      - text: username
+        href: https://github.com
+        icon: github
+      - text: youremail@pm.me
+        href: mailto:youremail@pm.me
+        icon: envelope-at
+      - text: bluesky
+        href: https://bsky.app
+        icon: peace
+      - text: linkedin
+        href: https://www.linkedin.com
+        icon: linkedin
+      - text: yourblog
+        href: https://www.duckduckgo.com
+        icon: wordpress
+  pdf:
+    pdf-engine: weasyprint
+    colorlinks: false
+css: cv.css
+subtitle: "Swiss writer"
+bibliography:
+  books: books.bib
+  translations: translations.bib
+csl: apa-cv.csl
+# include-in-header: <link rel="stylesheet" href="fontawesome-free-6.7.1-web/css/fontawesome.min.css">
+filters:
+  - multibib
+validate-yaml: false
+nocite: |
+  @*
+---
+
+
+::: {.hide-on-desktop .contact-block}
+[youremail@pm.me](mailto:youremail@pm.me)  
+[https://github.com](https://github.com)
+
+:::
+
+::: {.no-print}
+(Please note that the current document is not intended to have any biographical value. Ella Maillart is the favourite writer of the author of this repo and will be used for the example. Informations presented are mostly taken from wikipedia and definitely not complete.)
+
+Ella Maillart was a Swiss adventurer who wrote books and newspaper reports to finance herself, but admitted several times that she did not like to write. She participated in the 1924 Olympics in sailing as the only woman and youngest participant, which naturally lead to her representing Switzerland in the first four Alpine Skiing Worldcups. Ella Maillart also founded the first women field hockey club of french speaking Switzerland at the age of 16.
+:::
+
+<!-- ## Currently
+
+**Position** <br> details <br> *Institution* [*start --- Present*]{.cvdate} -->
+
+## Travels
+
+**Independant traveller** <br> Discovering russian cinema <br> *Moscow* [*1930 --- 1932*]{.cvdate}
+
+**Reporter for Le Petit Parisien** <br> Semi legally crossing China to assess the aftermath of the Kumul Rebellion, together with writer and MI6 agent Peter Fleming  <br> *Peking to Srinagar* [*February --- September 1935*]{.cvdate}
+
+
+## Books
+
+::: {#refs-books}
+:::
+
+## Translated books
+
+::: {#refs-translations}
+:::
