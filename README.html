@@ -614,7 +614,7 @@ conferences</li>
 </ul>
 <h2 id="cv-as-a-github-page">CV as a github page</h2>
 <p>Making your CV as a github page has several advantages. It is easy to
-update, it is always available, and list of publications can be
+update, it is always available, and lists of publications can be
 automated. The idea is to create the CV as a quarto document, that will
 be rendered both in pdf and html. The pdf version having a button to
 download it from the html one. Setting up a github action, we can
@@ -623,8 +623,8 @@ is pushed to the main branch.</p>
 <h3 id="acknowledgement">Acknowledgement</h3>
 <p>The idea of making a webpage CV that would also be rendered in pdf
 was first described in <a href="https://www.cynthiahqy.com/posts/cv-html-pdf/">this article from
-Cynthia Huang</a>. The handling of lists of publications and mobile view
-has been added to the original tutorial.</p>
+Cynthia Huang</a> (Huang, 2023). The handling of lists of publications
+and mobile view has been added to the original tutorial.</p>
 <h3 id="short-biography">Short biography</h3>
 <p>The “no-print” box allows you to have a short text that appears on
 the webpage version but not in the pdf. This can be modified in the css
@@ -633,18 +633,19 @@ file.</p>
 <p>For some reasons, when rendering a quarto file into an html, the
 table of content and contact informations does not appear on the mobile
 version. This is a massive issue, because in conferences most people
-will access your page throuhg a smartphone. The “hide-on-desktop” block
+will access your page using a smartphone. The “hide-on-desktop” block
 allows you to add information that will not appear on a screen larger
 than 481px. This can be changed in the css file.</p>
 <h3 id="lists-of-publications">Lists of publications</h3>
 <p>You can have several lists of publications: peer reviewed articles,
-popular science, books, and what not. Each list of publication needs to
-be in a separated bib file. The trick is to use the
-<code>multibib</code> filter, <code>nocite</code> to list publication
-that are not cited, and <code>validate-yaml: false</code> to silence an
-unwanted error. You will need to install the multibib filter from its <a href="https://github.com/pandoc-ext/multibib#readme">github repo</a>.
-The style of the publication lists depend on the csl (citation style
-language) file. Different csl can be downloaded on the <a href="https://www.zotero.org/styles">Zotero Style Repository</a>.</p>
+popular science, books, R packages, and what not. The trick is to use
+the <code>multibib</code> filter, <code>nocite</code> to list
+publication that are not cited, and <code>validate-yaml: false</code> to
+silence an unwanted error. Each list of publication needs to be in a
+separated bib file. You will need to install the multibib filter from
+its <a href="https://github.com/pandoc-ext/multibib#readme">github
+repo</a>. The style of the publication lists depend on the csl (citation
+style language) file. Different csl can be downloaded on the <a href="https://www.zotero.org/styles">Zotero Style Repository</a>.</p>
 <h3 id="rendering">Rendering</h3>
 <p>You need to first install weasyprint, instruction can be found on <a href="https://doc.courtbouillon.org/weasyprint/stable/first_steps.html#installation">this
 page</a>.</p>
@@ -657,7 +658,7 @@ your CV on another branch, and when it looks nice you open a pull
 request and it updates the webpage. Side note: you can have the github
 repo as private and the page as public, showing only your nicest
 side.</p>
-<p>The full documentation to setup a github actiona can be found in the
+<p>The full documentation to setup a github action can be found in the
 <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow">github
 documentation</a></p>
 <p>In short:</p>
@@ -667,7 +668,13 @@ documentation</a></p>
 <li>choose “static HTML”</li>
 <li>commit the changes to the main branch</li>
 </ul>
-<h2 id="making-a-qr-code-r">Making a QR code R</h2>
+<h2 id="making-a-qr-code-in-r">Making a QR code in R</h2>
+<p>QR codes are great. You can print them as stickers and have them at
+the back of your phone for example. And when someone asks how to stay in
+touch, or about your work, just hand it to them to scan.</p>
+<p>BUT… most “free” QR code generators are collecting data about the
+people scanning your QR code. Not cool. The <code>qrcode</code> package
+(Onkelinx and Teh, 2024) in R does not do that.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">library</span>(qrcode)</span>
 <span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>qrcode <span class="ot">&lt;-</span> <span class="fu">qr_code</span>(<span class="st">&quot;webpage&quot;</span>)</span>
 <span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="fu">generate_svg</span>(qrcode, <span class="at">filename =</span> <span class="st">&quot;qrcode.svg&quot;</span>)</span>
@@ -708,6 +715,22 @@ my research</td>
 </tr>
 </tbody>
 </table>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0" line-spacing="2">
+
+<div id="ref-huang2023" class="csl-entry">
+
+<p>Huang, C. (2023), “Publishing HTML and PDF versions of a Quarto CV
+without LaTex”, <a href="https://www.cynthiahqy.com/posts/cv-html-pdf/">https://www.cynthiahqy.com/posts/cv-html-pdf/</a>,
+August.</p>
+</div>
+
+<div id="ref-onkelinxQrcodeGenerateQrcodes2024" class="csl-entry">
+
+<p>Onkelinx, T. and Teh, V. (2024), <em>Qrcode: Generate Qrcodes with R.
+Version 0.3.0</em>, Manual, available at:<a href="https://doi.org/10.5281/zenodo.5040088">https://doi.org/10.5281/zenodo.5040088</a>.</p>
+</div>
+
+</div>
 
 </body>
 </html>
