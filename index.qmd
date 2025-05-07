@@ -1,0 +1,54 @@
+---
+title: 
+# format-links: false
+format:
+  html:
+    toc: true
+    other-links:
+      - text: username
+        href: https://github.com
+        icon: github
+      - text: youremail@pm.me
+        href: mailto:youremail@pm.me
+        icon: envelope-at
+      - text: bluesky
+        href: https://bsky.app
+        icon: peace
+      - text: linkedin
+        href: https://www.linkedin.com
+        icon: linkedin
+      - text: yourblog
+        href: https://www.duckduckgo.com
+        icon: wordpress
+  pdf:
+    pdf-engine: weasyprint
+    colorlinks: false
+css: cv.css
+subtitle: "Swiss writer"
+bibliography:
+  publis: books.bib
+  other: other.bib
+#   supervision: supervision.bib
+#   rpackages: rpackages.bib
+csl: apa-cv.csl
+# include-in-header: <link rel="stylesheet" href="fontawesome-free-6.7.1-web/css/fontawesome.min.css">
+filters:
+  - multibib
+validate-yaml: false
+nocite: |
+  @*
+---
+
+
+::: {.hide-on-desktop .contact-block}
+[youremail@pm.me](mailto:youremail@pm.me)  
+[https://github.com](https://github.com)
+
+:::
+
+::: {.no-print}
+Ella Maillart was a Swiss adventurer who wrote books and newspaper reports to finance herself, but admitted several times that she did not like to write. She participated in the 1924 Olympics in sailing as the only woman and youngest participants, which naturally lead her to represent Switzerland in the first four Alpine Skiing Worldcups. Ella Maillart also founded the first women field hockey club of french speaking Switzerland at the age of 16.
+:::
+
+## Currently
+

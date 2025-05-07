@@ -1,9 +1,13 @@
+---
+output: github_document
+---
 
 # The Early Career Researcher Tool Box
 
-This tool box aims at helping ECR going to big conferences for the first
-time. It contains:
+This tool box aims at helping ECR going to big conferences for the first time.
+It contains:
 
 - a tutorial to make a CV webpage with a downloadable pdf version.
 - a script to make a QR code directing to your webpage
 - a conference bingo, what you should aim for when going to conferences
+
