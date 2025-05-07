@@ -99,7 +99,7 @@ Time to play with your colleagues!
 Print this bingo, pack it and try to not yell BINGO too loud in the
 middle of a session.
 
-\|:——————————————-:\|:—————————————————————–:\|:———————————————————–:\|:——————————————————————————:\|
+\|———————————————\|——————————————————————-\|————————————————————-\|——————————————————————————–\|
 \| Asked a question (oral presentation) \| Had lunch with newly met
 people \| Explored the nature/culture/etc of the conference location \|
 Solved a science problem or puzzle I’ve been struggling with \| \|
@@ -111,4 +111,4 @@ Introduced myself and my topic \| \| Went to a society or interest group
 meeting \| Picked up a cool / useful new skill of relevance for my
 research \| Had a coffee or drink with a new person \| Shared an
 outstanding finding with colleagues \|
-\|:——————————————-:\|:—————————————————————–:\|:———————————————————–:\|:——————————————————————————:\|
+\|———————————————\|——————————————————————-\|————————————————————-\|——————————————————————————–\|
