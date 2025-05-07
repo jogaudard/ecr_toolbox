@@ -13,10 +13,10 @@ time. It contains:
 Making your CV as a github page has several advantages. It is easy to
 update, it is always available, and lists of publications can be
 automated. The idea is to create the CV as a quarto document, that will
-be rendered both in pdf and html. The pdf version having a button to
-download it from the html one. Setting up a github action, we can
-publish the new version of the webpage automatically everytime a change
-is pushed to the main branch.
+be rendered both in pdf and html. Then we create a github page to host
+the html version, with a button on the page to download the pdf version.
+Setting up a github action, we can publish the new version of the
+webpage automatically everytime a change is pushed to the main branch.
 
 ### Acknowledgement
 
@@ -25,6 +25,12 @@ first described in [this article from Cynthia
 Huang](https://www.cynthiahqy.com/posts/cv-html-pdf/) (Huang, 2023). The
 handling of lists of publications and mobile view has been added to the
 original tutorial.
+
+### Getting started
+
+Create a quarto file named `index.qmd` (you can download the one from
+the example). Fill in the information in the yaml, gather your degrees
+and publications, and let’s get started!
 
 ### Short biography
 
