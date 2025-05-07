@@ -87,6 +87,7 @@ In short:
 ## Making a QR code R
 
 ``` r
+library(qrcode)
 qrcode <- qr_code("webpage")
 generate_svg(qrcode, filename = "qrcode.svg")
 plot(qrcode)

@@ -668,9 +668,10 @@ documentation</a></p>
 <li>commit the changes to the main branch</li>
 </ul>
 <h2 id="making-a-qr-code-r">Making a QR code R</h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>qrcode <span class="ot">&lt;-</span> <span class="fu">qr_code</span>(<span class="st">&quot;webpage&quot;</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="fu">generate_svg</span>(qrcode, <span class="at">filename =</span> <span class="st">&quot;qrcode.svg&quot;</span>)</span>
-<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="fu">plot</span>(qrcode)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">library</span>(qrcode)</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>qrcode <span class="ot">&lt;-</span> <span class="fu">qr_code</span>(<span class="st">&quot;webpage&quot;</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="fu">generate_svg</span>(qrcode, <span class="at">filename =</span> <span class="st">&quot;qrcode.svg&quot;</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="fu">plot</span>(qrcode)</span></code></pre></div>
 <h2 id="conference-bingo">Conference bingo</h2>
 <p>Time to play with your colleagues!</p>
 <p>Print this bingo, pack it and try to not yell BINGO too loud in the
