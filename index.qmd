@@ -24,7 +24,7 @@ format:
     pdf-engine: weasyprint
     colorlinks: false
 css: cv.css
-subtitle: "Swiss writer"
+subtitle: "Swiss writer, adventurer, reporter, and athlete"
 bibliography:
   books: books.bib
   translations: translations.bib
