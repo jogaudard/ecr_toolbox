@@ -131,6 +131,21 @@ middle of a session.
   Went to a society or interest group meeting   Picked up a cool / useful new skill of relevance for my research              Had a coffee or drink with a new person                              Shared an outstanding finding with colleagues                  
  --------------------------------------------- ------------------------------------------------------------------- ------------------------------------------------------------- --------------------------------------------------------------------------------  -->
 
+## Conference DOs
+
+- Have a couple of A4 prints of your poster with you at all times.
+- Have your slides on your phone (true story: I redid my presentation to
+  some important people who had missed it on the U1 at 23:00 from my
+  phone slides.)
+- Reach out to your network (former supervisor, people met on a course,
+  …) before the conference and get organised to meet.
+- Use your university email. Most big conferences have a tool to find
+  people with their email.
+- Take it easy, escape once in a while, do sports (or whatever provides
+  you balance).
+
+<!-- ## Conference DON'Ts -->
+
 ### References
 
 <div id="refs" class="references csl-bib-body hanging-indent"
