@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# The Early Career Researcher Tool Box
+# A Tool Box for Early Career Researchers going to big conferences
 
 This tool box aims at helping ECR going to big conferences for the first time.
 It contains:
@@ -20,6 +20,8 @@ It contains:
 - a tutorial to make a CV webpage with a downloadable pdf version.
 - a script to make a QR code directing to your webpage
 - a conference bingo, what you should aim for when going to conferences
+
+Feel free to suggest content (via a github issue ideally) or fork it and adapt it as you please.
 
 ## CV as a github page
 
@@ -32,7 +34,7 @@ Setting up a github action, we can publish the new version of the webpage automa
 ### Acknowledgement
 
 The idea of making a webpage CV that would also be rendered in pdf was first described in [this article from Cynthia Huang](https://www.cynthiahqy.com/posts/cv-html-pdf/) [@huang2023].
-The handling of lists of publications and mobile view has been added to the original tutorial.
+The handling of lists of publications, mobile view, and github page automation have been added to the original tutorial.
 
 ### Getting started
 
@@ -109,9 +111,19 @@ Time to play with your colleagues!
 
 Print this bingo, pack it and try to not yell BINGO too loud in the middle of a session.
 
- --------------------------------------------- ------------------------------------------------------------------- ------------------------------------------------------------- -------------------------------------------------------------------------------- 
+ --------------------------------------------- ------------------------------------------------------------------ -------------------------------------------------------------- --------------------------------------------------------------- -------------------------------------------------------------------------------
+      Asked a question (oral presentation)                       Had lunch with newly met people                    Explored the  nature/culture/etc of the conference location    Solved a science problem or puzzle I've been struggling with                                   Helped someone                                  
+         Exchanged contact information                              Asked a question (poster)                             Went to a skills devellopment course or workshop        Attended a presentation or workshop around inclusivity topics   Made action points for yourself about things to follow up after the conference  
+    Met with a former colleague / supervisor                    Listened to a talk out of my field                                  Asked a question (any setup)                                  Introduced myself and my topic                                              Got a new research idea                             
+  Went to a society or interest group meeting   Picked up a cool / useful new skill of relevance for my research              Had a coffee or drink with a new person                     Shared an outstanding finding with colleagues                       Attended a presentation or workshop about mental health             
+ --------------------------------------------- ------------------------------------------------------------------ -------------------------------------------------------------- --------------------------------------------------------------- -------------------------------------------------------------------------------
+
+
+ <!-- --------------------------------------------- ------------------------------------------------------------------- ------------------------------------------------------------- -------------------------------------------------------------------------------- 
       Asked a question (oral presentation)                       Had lunch with newly met people                    Explored the  nature/culture/etc of the conference location            Solved a science problem or puzzle I've been struggling with           
                Exchanged contacts                                   Asked a question (poster)                             Went to a skills devellopment course or workshop        Made action points for yourself about things to follow up after the conference  
             Got a new research idea                             Listened to a talk out of my field                                  Asked a question (any setup)                                          Introduced myself and my topic                          
   Went to a society or interest group meeting   Picked up a cool / useful new skill of relevance for my research              Had a coffee or drink with a new person                              Shared an outstanding finding with colleagues                  
- --------------------------------------------- ------------------------------------------------------------------- ------------------------------------------------------------- -------------------------------------------------------------------------------- 
+ --------------------------------------------- ------------------------------------------------------------------- ------------------------------------------------------------- --------------------------------------------------------------------------------  -->
+
+### References
