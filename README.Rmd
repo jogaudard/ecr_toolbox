@@ -25,8 +25,14 @@ Feel free to suggest content (via a github issue ideally) or fork it and adapt i
 
 ## CV as a github page
 
-Making your CV as a github page has several advantages.
-It is easy to update, it is always available, and lists of publications can be automated.
+Making your CV as a github page has several advantages:
+
+- It is easy to update and maintain.
+  My trick is to put everything in the working file, and pass as comments what I currently do not want to show.
+- It is always available, as long as there is internet, which is great for networking.
+- Lists of publicatons are easier to handle
+- It looks cool (I might be biased on that one).
+
 The idea is to create the CV as a quarto document, that will be rendered both in pdf and html.
 Then we create a github page to host the html version, with a button on the page to download the pdf version.
 Setting up a github action, we can publish the new version of the webpage automatically everytime a change is pushed to the main branch.
@@ -129,7 +135,7 @@ Print this bingo, pack it and try to not yell BINGO too loud in the middle of a 
 ## Conference DOs
 
 - Have a couple of A4 prints of your poster with you at all times.
-- Have your slides on your phone (true story: I redid my presentation to some important people who had missed it on the U1 at 23:00 from my phone slides.)
+- Have your slides on your phone (true story: I redid my presentation to some important people who had missed it on the U1 in Vienna at 23:00 from my phone slides.)
 - Reach out to your network (former supervisor, people met on a course, ...) before the conference and get organised to meet.
 - Use your university email. Most big conferences have a tool to find people with their email.
 - Take it easy, escape once in a while, do sports (or whatever provides you balance).
