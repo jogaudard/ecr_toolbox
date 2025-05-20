@@ -26,8 +26,8 @@ format:
 css: cv.css
 subtitle: "Swiss writer, adventurer, reporter, and athlete"
 bibliography:
-  books: books.bib
-  translations: translations.bib
+  books: publications/books.bib
+  translations: publications/translations.bib
 csl: apa-cv.csl
 # include-in-header: <link rel="stylesheet" href="fontawesome-free-6.7.1-web/css/fontawesome.min.css">
 filters:

@@ -13,13 +13,21 @@ adapt it as you please.
 
 ## CV as a github page
 
-Making your CV as a github page has several advantages. It is easy to
-update, it is always available, and lists of publications can be
-automated. The idea is to create the CV as a quarto document, that will
-be rendered both in pdf and html. Then we create a github page to host
-the html version, with a button on the page to download the pdf version.
-Setting up a github action, we can publish the new version of the
-webpage automatically everytime a change is pushed to the main branch.
+Making your CV as a github page has several advantages:
+
+- It is easy to update and maintain. My trick is to put everything in
+  the working file, and pass as comments what I currently do not want to
+  show.
+- It is always available, as long as there is internet, which is great
+  for networking.
+- Lists of publicatons are easier to handle
+- It looks cool (I might be biased on that one).
+
+The idea is to create the CV as a quarto document, that will be rendered
+both in pdf and html. Then we create a github page to host the html
+version, with a button on the page to download the pdf version. Setting
+up a github action, we can publish the new version of the webpage
+automatically everytime a change is pushed to the main branch.
 
 ### Acknowledgement
 
@@ -31,9 +39,14 @@ automation have been added to the original tutorial.
 
 ### Getting started
 
-Create a quarto file named `index.qmd` (you can download the one from
-the example). Fill in the information in the yaml, gather your degrees
-and publications, and let’s get started!
+Generate a new repository from this template, gather your degrees and
+publications, and let’s get started! For a basic use, you will only need
+to edit the `index.qmd` (that is the CV itself), the files in the
+`publications` folder, and the QR code code chunk. If you wish to modify
+the layout, you will need to modify `cv.css` as well. In the
+`index.qmd`, you need to fill in your own information in the yaml and
+the short biography, and add the sections you need. Bibliographies will
+be done using bibtex (see below).
 
 ### Short biography
 
@@ -135,8 +148,8 @@ middle of a session.
 
 - Have a couple of A4 prints of your poster with you at all times.
 - Have your slides on your phone (true story: I redid my presentation to
-  some important people who had missed it on the U1 at 23:00 from my
-  phone slides.)
+  some important people who had missed it on the U1 in Vienna at 23:00
+  from my phone slides.)
 - Reach out to your network (former supervisor, people met on a course,
   …) before the conference and get organised to meet.
 - Use your university email. Most big conferences have a tool to find
