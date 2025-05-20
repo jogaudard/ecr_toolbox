@@ -39,9 +39,14 @@ automation have been added to the original tutorial.
 
 ### Getting started
 
-Create a quarto file named `index.qmd` (you can download the one from
-the example). Fill in the information in the yaml, gather your degrees
-and publications, and let’s get started!
+Generate a new repository from this template, gather your degrees and
+publications, and let’s get started! For a basic use, you will only need
+to edit the `index.qmd` (that is the CV itself), the files in the
+`publications` folder, and the QR code code chunk. If you wish to modify
+the layout, you will need to modify `cv.css` as well. In the
+`index.qmd`, you need to fill in your own information in the yaml and
+the short biography, and add the sections you need. Bibliographies will
+be done using bibtex (see below).
 
 ### Short biography
 
