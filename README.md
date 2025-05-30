@@ -74,7 +74,10 @@ install the multibib filter from its [github
 repo](https://github.com/pandoc-ext/multibib#readme). The style of the
 publication lists depend on the csl (citation style language) file.
 Different csl can be downloaded on the [Zotero Style
-Repository](https://www.zotero.org/styles).
+Repository](https://www.zotero.org/styles). To have your name in bold in
+the authors list, you need the `bold-author.lua` and change the yaml
+accordingly (see this
+[answer](https://stackoverflow.com/a/76429867/10685715)).
 
 ### Rendering
 
