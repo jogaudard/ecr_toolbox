@@ -13,10 +13,13 @@ format:
         icon: envelope-at
       - text: bluesky
         href: https://bsky.app
-        icon: peace
+        icon: bluesky
       - text: linkedin
         href: https://www.linkedin.com
         icon: linkedin
+      - text: Google scholar profile
+        href: https://scholar.google.com/
+        icon: mortarboard
       - text: yourblog
         href: https://www.duckduckgo.com
         icon: wordpress
