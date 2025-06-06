@@ -36,6 +36,7 @@ Making your CV as a github page has several advantages:
 The idea is to create the CV as a quarto document, that will be rendered both in pdf and html.
 Then we create a github page to host the html version, with a button on the page to download the pdf version.
 Setting up a github action, we can publish the new version of the webpage automatically everytime a change is pushed to the main branch.
+See the example [here](https://jogaudard.github.io/ecr_toolbox/).
 
 ### Acknowledgement
 
@@ -65,12 +66,13 @@ This can be changed in the css file.
 
 ### Lists of publications
 You can have several lists of publications: peer reviewed articles, popular science, books, R packages, and what not.
-The trick is to use the `multibib` filter, `nocite` to list publication that are not cited, and `validate-yaml: false` to silence an unwanted error.
-Each list of publication needs to be in a separated bib file.
-You will need to install the multibib filter from its [github repo](https://github.com/pandoc-ext/multibib#readme).
-The style of the publication lists depend on the csl (citation style language) file.
+Each list of publication needs to be in a separated bib file, that you call in the yaml.
+You change the citation style by changing the citation style language file (csl).
 Different csl can be downloaded on the [Zotero Style Repository](https://www.zotero.org/styles).
-To have your name in bold in the authors list, you need the `bold-author.lua` and change the yaml accordingly (see this [answer](https://stackoverflow.com/a/76429867/10685715)).
+Change the `bold-auth-name:` in the yaml to have your name appear in bold.
+And for publication with many authors where your name does not appear, the trick is to manually change the entry in the bib file to get your name higher in the list.
+
+All of this works with the [multibib](https://github.com/pandoc-ext/multibib#readme) and [bold-author](https://stackoverflow.com/a/76429867/10685715) extensions, in case you want to dive deeper.
 
 
 ### Rendering
@@ -98,6 +100,7 @@ In short:
 - choose "static HTML"
 - commit the changes to the main branch
 
+Your CV is now online with an address that looks like this: [username.github.io/[cv_repo_name]](https://jogaudard.github.io/ecr_toolbox/)!
 
 ## Making a QR code in R
 
