@@ -629,8 +629,8 @@ for networking.</li>
 rendered both in pdf and html. Then we create a github page to host the
 html version, with a button on the page to download the pdf version.
 Setting up a github action, we can publish the new version of the
-webpage automatically everytime a change is pushed to the main
-branch.</p>
+webpage automatically everytime a change is pushed to the main branch.
+See the example <a href="https://jogaudard.github.io/ecr_toolbox/">here</a>.</p>
 <h3 id="acknowledgement">Acknowledgement</h3>
 <p>The idea of making a webpage CV that would also be rendered in pdf
 was first described in <a href="https://www.cynthiahqy.com/posts/cv-html-pdf/">this article from
@@ -659,17 +659,16 @@ allows you to add information that will not appear on a screen larger
 than 481px. This can be changed in the css file.</p>
 <h3 id="lists-of-publications">Lists of publications</h3>
 <p>You can have several lists of publications: peer reviewed articles,
-popular science, books, R packages, and what not. The trick is to use
-the <code>multibib</code> filter, <code>nocite</code> to list
-publication that are not cited, and <code>validate-yaml: false</code> to
-silence an unwanted error. Each list of publication needs to be in a
-separated bib file. You will need to install the multibib filter from
-its <a href="https://github.com/pandoc-ext/multibib#readme">github
-repo</a>. The style of the publication lists depend on the csl (citation
-style language) file. Different csl can be downloaded on the <a href="https://www.zotero.org/styles">Zotero Style Repository</a>. To
-have your name in bold in the authors list, you need the
-<code>bold-author.lua</code> and change the yaml accordingly (see this
-<a href="https://stackoverflow.com/a/76429867/10685715">answer</a>).</p>
+popular science, books, R packages, and what not. Each list of
+publication needs to be in a separated bib file, that you call in the
+yaml. You change the citation style by changing the citation style
+language file (csl). Different csl can be downloaded on the <a href="https://www.zotero.org/styles">Zotero Style Repository</a>. Change
+the <code>bold-auth-name:</code> in the yaml to have your name appear in
+bold. And for publication with many authors where your name does not
+appear, the trick is to manually change the entry in the bib file to get
+your name higher in the list.</p>
+<p>All of this works with the <a href="https://github.com/pandoc-ext/multibib#readme">multibib</a> and <a href="https://stackoverflow.com/a/76429867/10685715">bold-author</a>
+extensions, in case you want to dive deeper.</p>
 <h3 id="rendering">Rendering</h3>
 <p>You need to first install weasyprint, instruction can be found on <a href="https://doc.courtbouillon.org/weasyprint/stable/first_steps.html#installation">this
 page</a>.</p>
@@ -692,6 +691,7 @@ documentation</a></p>
 <li>choose “static HTML”</li>
 <li>commit the changes to the main branch</li>
 </ul>
+<p>Your CV is now online with an address that looks like this: <a href="https://jogaudard.github.io/ecr_toolbox/">username.github.io/[cv_repo_name]</a>!</p>
 <h2 id="making-a-qr-code-in-r">Making a QR code in R</h2>
 <p>QR codes are great. You can print them as stickers and have them at
 the back of your phone for example. And when someone asks how to stay in
