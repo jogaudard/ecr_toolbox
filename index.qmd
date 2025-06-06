@@ -13,10 +13,13 @@ format:
         icon: envelope-at
       - text: bluesky
         href: https://bsky.app
-        icon: peace
+        icon: bluesky
       - text: linkedin
         href: https://www.linkedin.com
         icon: linkedin
+      - text: Google scholar profile
+        href: https://scholar.google.com/
+        icon: mortarboard
       - text: yourblog
         href: https://www.duckduckgo.com
         icon: wordpress
@@ -32,7 +35,7 @@ csl: apa-cv.csl
 # include-in-header: <link rel="stylesheet" href="fontawesome-free-6.7.1-web/css/fontawesome.min.css">
 filters:
   - multibib
-  - bold-author.lua
+  - bold-author
 bold-auth-name:
   - family: Maillart
     given: E.
