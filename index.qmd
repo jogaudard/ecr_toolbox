@@ -5,6 +5,9 @@ format:
   html:
     toc: true
     other-links:
+      - text: List of publications
+        href: https://jogaudard.github.io/ecr_toolbox/emaillart_publications.pdf
+        icon: filetype-pdf
       - text: username
         href: https://github.com
         icon: github

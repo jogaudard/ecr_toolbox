@@ -1,0 +1,36 @@
+---
+title: Ella Meillart
+format:
+  pdf:
+    pdf-engine: weasyprint
+    colorlinks: false
+css: cv.css
+subtitle: "List of publications"
+bibliography:
+  books: publications/books.bib
+  translations: publications/translations.bib
+csl: apa-cv.csl
+filters:
+  - multibib
+  - bold-author
+bold-auth-name:
+  - family: Maillart
+    given: E.
+validate-yaml: false
+nocite: |
+  @*
+---
+
+
+[youremail@pm.me](mailto:youremail@pm.me)  
+[https://github.com](https://github.com)
+
+## Books
+
+::: {#refs-books}
+:::
+
+## Translated books
+
+::: {#refs-translations}
+:::
