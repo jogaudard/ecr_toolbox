@@ -669,11 +669,15 @@ appear, the trick is to manually change the entry in the bib file to get
 your name higher in the list.</p>
 <p>All of this works with the <a href="https://github.com/pandoc-ext/multibib#readme">multibib</a> and <a href="https://stackoverflow.com/a/76429867/10685715">bold-author</a>
 extensions, in case you want to dive deeper.</p>
+<p>Editing the <code>emaillart_publications.qmd</code> file, you can
+make a list of publications in pdf (that gets updated everytime you
+render it) that can be downloaded from the CV webpage.</p>
 <h3 id="rendering">Rendering</h3>
 <p>You need to first install weasyprint, instruction can be found on <a href="https://doc.courtbouillon.org/weasyprint/stable/first_steps.html#installation">this
 page</a>.</p>
 <p>Then run this code to render:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>quarto<span class="sc">::</span><span class="fu">quarto_render</span>(<span class="st">&quot;index.qmd&quot;</span>, <span class="at">output_format =</span> <span class="st">&quot;all&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>quarto<span class="sc">::</span><span class="fu">quarto_render</span>(<span class="st">&quot;index.qmd&quot;</span>, <span class="at">output_format =</span> <span class="st">&quot;all&quot;</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>quarto<span class="sc">::</span><span class="fu">quarto_render</span>(<span class="st">&quot;emaillart_publications.qmd&quot;</span>)</span></code></pre></div>
 <h3 id="making-a-github-page">Making a github page</h3>
 <p>Now we want to make a github page, and we want the page to update
 everytime we pull an update in the main branch. That way, you can update

@@ -82,6 +82,10 @@ All of this works with the
 [bold-author](https://stackoverflow.com/a/76429867/10685715) extensions,
 in case you want to dive deeper.
 
+Editing the `emaillart_publications.qmd` file, you can make a list of
+publications in pdf (that gets updated everytime you render it) that can
+be downloaded from the CV webpage.
+
 ### Rendering
 
 You need to first install weasyprint, instruction can be found on [this
@@ -91,6 +95,7 @@ Then run this code to render:
 
 ``` r
 quarto::quarto_render("index.qmd", output_format = "all")
+quarto::quarto_render("emaillart_publications.qmd")
 ```
 
 ### Making a github page
