@@ -2,7 +2,6 @@
 title: Ella Meillart
 format:
   pdf:
-    pdf-engine: weasyprint
     colorlinks: false
 css: cv.css
 subtitle: "List of publications"
