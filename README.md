@@ -88,15 +88,14 @@ be downloaded from the CV webpage.
 
 ### Rendering
 
-You need to first install weasyprint, instruction can be found on [this
-page](https://doc.courtbouillon.org/weasyprint/stable/first_steps.html#installation).
-
-Then run this code to render:
+Then run the following code to render:
 
 ``` r
 quarto::quarto_render("index.qmd", output_format = "all")
 quarto::quarto_render("emaillart_publications.qmd")
 ```
+
+It requires a LaTeX engine to render the pdf.
 
 ### Making a github page
 
