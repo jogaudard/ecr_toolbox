@@ -1,5 +1,9 @@
+Quarto template to make your CV as a GitHub page (and other tools for
+early career researchers)
+================
+Joseph Gaudard
 
-# A Tool Box for Early Career Researchers going to big conferences
+<!-- # Quarto template to make your CV as a GitHub page (and other tools for early career researchers) -->
 
 This tool box aims at helping ECR going to big conferences for the first
 time. It contains:
@@ -171,6 +175,24 @@ middle of a session.
   you balance).
 
 <!-- ## Conference DON'Ts -->
+
+## How to cite
+
+I don’t expect you to cite this repo if you just use it to make your CV
+webpage. However, if you want to disseminate it, or build on it, here is
+the citation:
+
+    [1] J. Gaudard. _Quarto Template to Make Your CV as a GitHub Page (and
+    Other Tools for Early Career Researchers)_. Manual.
+    <https://github.com/jogaudard/ecr_toolbox>. 2025.
+
+    @manual{ecr_toolbox,
+      type = {Manual},
+      title = {Quarto Template to Make Your {{CV}} as a {{GitHub}} Page (and Other Tools for Early Career Researchers)},
+      author = {Joseph Gaudard},
+      year = {2025},
+      note = {\url{https://github.com/jogaudard/ecr_toolbox}},
+    }
 
 ### References
 
