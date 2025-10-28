@@ -1,4 +1,6 @@
 ---
+title: "Quarto template to make your CV as a GitHub page (and other tools for early career researchers)"
+author: "Joseph Gaudard"
 output: github_document
 bibliography: /home/jga051/Dropbox/PhD/biblio_phd_zot.bib
 csl: /home/jga051/Documents/01_PhD/emerald-harvard.csl
@@ -6,13 +8,13 @@ csl: /home/jga051/Documents/01_PhD/emerald-harvard.csl
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>",
+  comment = "",
   fig.path = "man/figures/README-",
   out.width = "100%"
 )
 ```
 
-# A Tool Box for Early Career Researchers going to big conferences
+<!-- # Quarto template to make your CV as a GitHub page (and other tools for early career researchers) -->
 
 This tool box aims at helping ECR going to big conferences for the first time.
 It contains:
@@ -152,5 +154,35 @@ Print this bingo, pack it and try to not yell BINGO too loud in the middle of a 
 - Take it easy, escape once in a while, do sports (or whatever provides you balance).
 
 <!-- ## Conference DON'Ts -->
+
+## How to cite
+
+I don't expect you to cite this repo if you just use it to make your CV webpage.
+However, if you want to disseminate it, or build on it, here is the citation:
+
+```{r, eval = TRUE, echo = FALSE}
+
+# Load bibtex parser
+
+library(RefManageR)
+
+# Read the .bib file
+
+bib <- ReadBib("/home/jga051/Dropbox/PhD/biblio_phd_zot.bib", check = FALSE)
+
+# Select one entry (by key)
+
+entry_key <- "ecr_toolbox"
+
+# Get formatted citation (plain text)
+
+cat(format(bib[[entry_key]], style = "text"))
+
+# Print the BibTeX block
+
+cat(" \n", " \n")
+cat(toBibtex(bib[[entry_key]]), sep = "\n")
+
+```
 
 ### References
