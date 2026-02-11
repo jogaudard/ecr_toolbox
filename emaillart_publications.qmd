@@ -8,7 +8,7 @@ subtitle: "List of publications"
 bibliography:
   books: publications/books.bib
   translations: publications/translations.bib
-csl: apa-cv.csl
+csl: apa-publi-list.csl
 filters:
   - multibib
   - bold-author
