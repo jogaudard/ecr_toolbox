@@ -54,16 +54,16 @@ list(
     name = "render_publications",
     path = "emaillart_publications.qmd",
     extra_files = c(
-      "bibliographies/books.bib",
-      "bibliographies/translations.bib"
+      "publications/books.bib",
+      "publications/translations.bib"
     )
   ),
   tar_quarto(
     name = "render_index",
     path = "index.qmd",
     extra_files = c(
-      "bibliographies/books.bib",
-      "bibliographies/translations.bib"
+      "publications/books.bib",
+      "publications/translations.bib"
     )
   )
 )
