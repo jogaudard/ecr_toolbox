@@ -81,11 +81,10 @@ Editing the `emaillart_publications.qmd` file, you can make a list of publicatio
 ### Rendering
 
 
-Then run the following code to render:
+The repo now runs on targets, so you will just need to run the following code to render the CV in pdf and html, and the list of publications in pdf:
 
 ```{r, eval = FALSE}
-quarto::quarto_render("index.qmd", output_format = "all")
-quarto::quarto_render("emaillart_publications.qmd")
+targets::tar_make()
 ```
 
 It requires a LaTeX engine to render the pdf.
