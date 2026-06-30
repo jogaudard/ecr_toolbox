@@ -601,11 +601,11 @@ padding-top: 0px;
 
 <body>
 
-<h1 id="quarto-template-to-make-your-cv-as-a-github-page-and-other-tools-for-early-career-researchers">Quarto
-template to make your CV as a GitHub page (and other tools for early
-career researchers)</h1>
+<h1 id="template-to-make-your-cv-as-a-github-page-and-other-tools-for-early-career-researchers">Template
+to make your CV as a GitHub page (and other tools for early career
+researchers)</h1>
 <p>Joseph Gaudard</p>
-<!-- # Quarto template to make your CV as a GitHub page (and other tools for early career researchers) -->
+<!-- # Template to make your CV as a GitHub page (and other tools for early career researchers) -->
 
 <p>This tool box aims at helping ECR going to big conferences for the
 first time. It contains:</p>
@@ -677,9 +677,10 @@ extensions, in case you want to dive deeper.</p>
 make a list of publications in pdf (that gets updated everytime you
 render it) that can be downloaded from the CV webpage.</p>
 <h3 id="rendering">Rendering</h3>
-<p>Then run the following code to render:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>quarto<span class="sc">::</span><span class="fu">quarto_render</span>(<span class="st">&quot;index.qmd&quot;</span>, <span class="at">output_format =</span> <span class="st">&quot;all&quot;</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>quarto<span class="sc">::</span><span class="fu">quarto_render</span>(<span class="st">&quot;emaillart_publications.qmd&quot;</span>)</span></code></pre></div>
+<p>The repo now runs on targets, so you will just need to run the
+following code to render the CV in pdf and html, and the list of
+publications in pdf:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>targets<span class="sc">::</span><span class="fu">tar_make</span>()</span></code></pre></div>
 <p>It requires a LaTeX engine to render the pdf.</p>
 <h3 id="making-a-github-page">Making a github page</h3>
 <p>Now we want to make a github page, and we want the page to update
@@ -779,9 +780,7 @@ provides you balance).</li>
 <p>I don’t expect you to cite this repo if you just use it to make your
 CV webpage. However, if you want to disseminate it, or build on it, here
 is the citation:</p>
-<pre><code>Ignoring entry &#39;10261_60675&#39;  (line1) because:
-    &#39;bibtype&#39; has to be one of Article, Book, MVBook, InBook, BookInBook, SuppBook, Booklet, Collection, MVCollection, InCollection, SuppCollection, Manual, Misc, Online, Patent, Periodical, SuppPeriodical, Proceedings, MVProceedings, InProceedings, Reference, MVReference, InReference, Report, Set, Thesis, Unpublished, XData, Customa, Customb, Customc, Customd, Custome, Customf, Conference, Electronic, MastersThesis, PhdThesis, TechReport, Www, Artwork, Audio, BibNote, Commentary, Image, Jurisdiction, Legislation, Legal, Letter, Movie, Music, Performance, Review, Software, Standard, Video
-[1] J. Gaudard. _Template to Make Your CV as a GitHub Page (and Other
+<pre><code>[1] J. Gaudard. _Template to Make Your CV as a GitHub Page (and Other
 Tools for Early Career Researchers)_. Manual.
 &lt;https://github.com/jogaudard/ecr_toolbox&gt;. 2025.
 

@@ -1,9 +1,9 @@
-Quarto template to make your CV as a GitHub page (and other tools for
-early career researchers)
+Template to make your CV as a GitHub page (and other tools for early
+career researchers)
 ================
 Joseph Gaudard
 
-<!-- # Quarto template to make your CV as a GitHub page (and other tools for early career researchers) -->
+<!-- # Template to make your CV as a GitHub page (and other tools for early career researchers) -->
 
 This tool box aims at helping ECR going to big conferences for the first
 time. It contains:
@@ -92,11 +92,12 @@ be downloaded from the CV webpage.
 
 ### Rendering
 
-Then run the following code to render:
+The repo now runs on targets, so you will just need to run the following
+code to render the CV in pdf and html, and the list of publications in
+pdf:
 
 ``` r
-quarto::quarto_render("index.qmd", output_format = "all")
-quarto::quarto_render("emaillart_publications.qmd")
+targets::tar_make()
 ```
 
 It requires a LaTeX engine to render the pdf.
@@ -182,8 +183,6 @@ I don’t expect you to cite this repo if you just use it to make your CV
 webpage. However, if you want to disseminate it, or build on it, here is
 the citation:
 
-    Ignoring entry '10261_60675'  (line1) because:
-        'bibtype' has to be one of Article, Book, MVBook, InBook, BookInBook, SuppBook, Booklet, Collection, MVCollection, InCollection, SuppCollection, Manual, Misc, Online, Patent, Periodical, SuppPeriodical, Proceedings, MVProceedings, InProceedings, Reference, MVReference, InReference, Report, Set, Thesis, Unpublished, XData, Customa, Customb, Customc, Customd, Custome, Customf, Conference, Electronic, MastersThesis, PhdThesis, TechReport, Www, Artwork, Audio, BibNote, Commentary, Image, Jurisdiction, Legislation, Legal, Letter, Movie, Music, Performance, Review, Software, Standard, Video
     [1] J. Gaudard. _Template to Make Your CV as a GitHub Page (and Other
     Tools for Early Career Researchers)_. Manual.
     <https://github.com/jogaudard/ecr_toolbox>. 2025.
