@@ -1,5 +1,5 @@
 ---
-title: "Quarto template to make your CV as a GitHub page (and other tools for early career researchers)"
+title: "Template to make your CV as a GitHub page (and other tools for early career researchers)"
 author: "Joseph Gaudard"
 output: github_document
 bibliography: /home/jga051/Dropbox/PhD/biblio_phd_zot.bib
@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-<!-- # Quarto template to make your CV as a GitHub page (and other tools for early career researchers) -->
+<!-- # Template to make your CV as a GitHub page (and other tools for early career researchers) -->
 
 This tool box aims at helping ECR going to big conferences for the first time.
 It contains:
